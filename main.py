@@ -13,8 +13,8 @@ def return_graph(xlist, ylist, labelx, labely, legend_measurement, legend_theore
     plt.xlabel(str(labelx), fontsize = 16)
     plt.ylabel(str(labely), fontsize = 16)
     #plotting graphs including markers
-    plt.plot(xlist, ylist, markersize=10, linewidth=1, label = str(legend_measurement), marker="o", color="black")
-    plt.plot(xfit, yfit, markersize=10, linewidth=1, label = str(legend_theoretical), marker="x", color="red")
+    plt.plot(xlist, ylist, markersize=10, markerfacecolor='none', linewidth=1, label = str(legend_measurement), marker="o", color="black")
+    plt.plot(xfit, yfit, markersize=10, markerfacecolor='none', linewidth=1, label = str(legend_theoretical), marker="x", color="red")
     plt.legend(loc= position)
     plt.grid(True)
     plt.show()
